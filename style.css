@@ -120,7 +120,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-    background:rgba(255, 255, 255, 0.2)
+    background:rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -130,3 +130,33 @@ Footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 700px) {
+    :root {
+      --bg-url: url(./assets/bg-desktop.jpg);
+    }
+  
+    .light {
+      --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+  }
+  
+  /* animation */
+  @keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  @keyframes slide-back {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
